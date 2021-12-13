@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class Zemin : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float ZıplamaKuvveti;
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.relativeVelocity.y < 0) 
+        {
+
+            Rigidbody2D rb = collision.collider.GetComponent<Rigidbody2D>();
+
+            if (rb != null)
+            {
+                Vector2 ZıplamaVelocity = rb.velocity;
+                ZıplamaVelocity.y = ZıplamaKuvveti;
+                rb.velocity = ZıplamaVelocity;
+            }
+
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
+
+
 }
