@@ -14,11 +14,26 @@ public class KarakterHareket : MonoBehaviour
 
 
 
-        private void Update(){
+    private void Update(){
+
         yatayhareket = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(yatayhareket * harakethizi*Time.deltaTime,rb.velocity.y);
+        rb.velocity = new Vector2(yatayhareket * harakethizi * Time.deltaTime, rb.velocity.y);
+        Vector2 yeniscale = transform.localScale;
+
+        if (yatayhareket > 0) {
+            yeniscale.x = 0.35f;
         }
 
+        if (yatayhareket<0) {
+            yeniscale.x = -0.35f;
+        }
+     
+        transform.localScale = yeniscale;
+
+    }
+
+       
+        
 
 
 
