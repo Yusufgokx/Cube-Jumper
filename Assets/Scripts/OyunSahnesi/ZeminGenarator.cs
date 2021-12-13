@@ -5,7 +5,7 @@ using UnityEngine;
 public class ZeminGenarator : MonoBehaviour
 {
     public GameObject zemin;
-    public Transform tr;
+    private Transform tr;
 
 
     public int zeminsayýsý;
@@ -29,6 +29,9 @@ public class ZeminGenarator : MonoBehaviour
 
             Instantiate(zemin, spawnkonumu, Quaternion.identity);
         }
+
+
+
 
     }
 
