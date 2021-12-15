@@ -5,7 +5,7 @@ using UnityEngine;
 public class Zemin : MonoBehaviour
 {
     public float ZıplamaKuvveti;
-
+    public bool ZemineTemasEdildi;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -19,9 +19,22 @@ public class Zemin : MonoBehaviour
                 Vector2 ZıplamaVelocity = rb.velocity;
                 ZıplamaVelocity.y = ZıplamaKuvveti;
                 rb.velocity = ZıplamaVelocity;
+
+                if (ZemineTemasEdildi == false)
+                {
+                    Score.SkorSayisi++;
+                    ZemineTemasEdildi = true;
+                }
             }
 
         }
+
+
+
+
+
+
+
 
     }
 
