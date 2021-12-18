@@ -7,8 +7,6 @@ public class Score : MonoBehaviour
     public Text skor;
     public static float SkorSayisi;
 
-  
-
    
     void Update()
     {

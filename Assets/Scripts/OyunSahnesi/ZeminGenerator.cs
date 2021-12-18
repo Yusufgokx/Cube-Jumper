@@ -10,7 +10,6 @@ public class ZeminGenerator : MonoBehaviour
 
     public int zeminsayısı;
     public float zemingenislik;
-
     public float minimumy, maximumy;
 
 

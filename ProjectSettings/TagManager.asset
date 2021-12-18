@@ -47,6 +47,9 @@ TagManager:
   - name: Zemin
     uniqueID: 2242290685
     locked: 0
+  - name: Karakter Trail
+    uniqueID: 821146587
+    locked: 0
   - name: Karakter
     uniqueID: 4266592897
     locked: 0
