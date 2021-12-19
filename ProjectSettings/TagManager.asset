@@ -59,3 +59,6 @@ TagManager:
   - name: PngLight
     uniqueID: 4246471145
     locked: 0
+  - name: JumperCubeText
+    uniqueID: 1669572229
+    locked: 0
