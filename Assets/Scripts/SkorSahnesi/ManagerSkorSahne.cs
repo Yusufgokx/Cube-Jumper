@@ -8,11 +8,14 @@ public class ManagerSkorSahne : MonoBehaviour
 
     private void Update()
     {
+        LoadScene();//Fonksyonla yani aşağıdaki load scane fonksyonunu updatede çağırdık daha temiz bir kodlama biçimidir 
+        
+    }
+    public void LoadScene()
+    {
+        if (Input.GetMouseButton(0))
         {
-            if (Input.GetMouseButton(0))
-            {
-                SceneManager.LoadScene(0);
-            }
+            SceneManager.LoadScene(0);
         }
     }
 }
