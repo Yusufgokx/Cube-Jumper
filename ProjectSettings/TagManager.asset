@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Coin
   layers:
   - Default
   - TransparentFX
@@ -61,4 +62,7 @@ TagManager:
     locked: 0
   - name: JumperCubeText
     uniqueID: 1669572229
+    locked: 0
+  - name: Coin
+    uniqueID: 3559386017
     locked: 0

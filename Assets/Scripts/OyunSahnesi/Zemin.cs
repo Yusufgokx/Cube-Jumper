@@ -16,7 +16,7 @@ public class Zemin : MonoBehaviour
         ZıplatanZeminIhtimali = Random.Range(1, 11);
         if (ZıplatanZeminIhtimali == 1)
         {
-            anim.SetBool("JumperFloor",true);
+            anim.SetBool("JumperFloor", true);
             ZıplamaKuvveti = 20f;
         }
         else
@@ -27,7 +27,8 @@ public class Zemin : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.relativeVelocity.y < 0) 
+       
+        if (collision.relativeVelocity.y < 0)
         {
 
             Rigidbody2D rb = collision.collider.GetComponent<Rigidbody2D>();
@@ -40,7 +41,7 @@ public class Zemin : MonoBehaviour
 
                 if (ZemineTemasEdildi == false)
                 {
-                    rastgeledeger = Random.Range(1,3);
+                    rastgeledeger = Random.Range(1, 1);
                     Score.SkorSayisi += rastgeledeger;
                     Score.SkorSayisi++;
                     ZemineTemasEdildi = true;
@@ -60,7 +61,7 @@ public class Zemin : MonoBehaviour
 
     }
 
-    
+
 
 
 }

@@ -31,8 +31,16 @@ public class KarakterHareket : MonoBehaviour
         transform.localScale = yeniscale;
 
     }
-    
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Coin")
+        {
+            Score.SkorSayisi += 5;
+            Destroy(collision.gameObject);
+        }
+
+    }
 
 
 }
