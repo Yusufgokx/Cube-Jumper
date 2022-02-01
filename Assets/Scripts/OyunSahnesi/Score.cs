@@ -65,6 +65,9 @@ public class Score : MonoBehaviour
         }
         SceneManager.LoadScene("SkorSahnesi");
         SkorSayisi = 0;
+        Debug.Log("ONUR NABER");
+       
+
     }
     
 }

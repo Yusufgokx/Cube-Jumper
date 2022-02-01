@@ -23,6 +23,7 @@ public class Zemin : MonoBehaviour
         {
             ZıplamaKuvveti = 13f;
         }
+        Debug.Log("ONUR NABER");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
