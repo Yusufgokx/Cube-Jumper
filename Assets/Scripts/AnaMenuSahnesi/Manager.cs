@@ -10,7 +10,7 @@ public class Manager : MonoBehaviour
         if(Input.GetMouseButton(0))
         {
             SceneManager.LoadScene(1);
-            Debug.Log("ONUR NABER");
+            
         }
     }
 }
