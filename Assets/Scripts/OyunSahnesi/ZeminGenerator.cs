@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class ZeminGenerator : MonoBehaviour
 {
+   
     public GameObject zemin;
 
     private Transform tr;
+    public GameObject coin;
+    public GameObject redcoin;
 
     public int zeminsayısı;
+    public int minCoin;
+    public int maxCoin;
     public float zemingenislik;
     public float minimumy, maximumy;
+  
+    
 
 
     private void Start()
@@ -29,7 +36,20 @@ public class ZeminGenerator : MonoBehaviour
             spawnkonumu.x = Random.Range(-zemingenislik, zemingenislik);
 
             Instantiate(zemin, spawnkonumu, Quaternion.identity);
+            
+            var RastgeleCoinoluşturma = Random.Range(minCoin, maxCoin);
 
+            if (RastgeleCoinoluşturma == 1)
+            {
+                Instantiate(coin, spawnkonumu + Vector3.up, Quaternion.identity);
+            }
+            else if (RastgeleCoinoluşturma == 2) 
+            {
+                Instantiate(redcoin , spawnkonumu + Vector3.up, Quaternion.identity);
+            }
+            
+           
+              
         }
 
 
